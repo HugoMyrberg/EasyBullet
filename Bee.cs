@@ -25,6 +25,16 @@ namespace EasyBullet
                 }
                 
             }
+            
+            if (Keyboard.GetState().IsKeyDown(Keys.W)) // Framåt
+            {
+                Move(5); // Flytta framåt med hastighet 5
+            }
+            if (Keyboard.GetState().IsKeyDown(Keys.S)) // Bakåt
+            {
+                Move(-5); // Flytta bakåt
+            }
+           
         }
         private void Shoot()
         {
